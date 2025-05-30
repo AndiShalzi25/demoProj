@@ -6,12 +6,25 @@ using System.Threading.Tasks;
 
 namespace demoProj
 {
-	public class employee
-	{
-		public int id;
+    public class Employee
+    {
+        private int Id { get; set; }
+        public string FullName { get; set; }
 
-		public string name;
+        public int Age { get; set; }
 
-		public string email;
-	}
+
+        public string Gender { get; set; }
+
+
+        public Employee(string fullName, int age, string gender)
+        {
+            FullName = fullName;
+            Age = age;
+            Gender = gender;
+        }
+
+    }
+
+   
 }
